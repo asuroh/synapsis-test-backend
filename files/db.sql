@@ -84,3 +84,11 @@ CREATE TABLE `transaction_details` (
   updated_at timestamp(6) DEFAULT now(),
   deleted_at timestamp(6) 
 );
+
+
+INSERT INTO `categories` (`id`, `name`, `description`, `created_at`, `updated_at`, `deleted_at`) VALUES
+('1', 'makanan', 'isi makanan', '2024-06-20 07:18:27.213741', '2024-06-20 07:18:27.213741', NULL);
+
+INSERT INTO `products` (`id`, `category_id`, `code`, `name`, `description`, `image_path`, `price`, `qty`, `created_at`, `updated_at`, `deleted_at`) VALUES
+('1', '1', 'mk', 'seblak', 'seblak', NULL, 20000, 95, '2024-06-20 07:18:57.521809', '2024-06-20 05:13:11.169302', NULL);
+
